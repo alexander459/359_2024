@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/database/DB_main/DB_Create_Main.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/database/DB_main/DB_Handle.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/database/DB_main/Test.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/database/tables/EditAdminTable.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/database/tables/EditBookingsTable.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/database/tables/EditMessagesTable.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/database/tables/EditPetKeepersTable.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/database/tables/EditPetOwnersTable.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/database/tables/EditPetsTable.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/database/tables/EditReviewsTable.java" dialect="GenericSQL" />
+  </component>
+</project>

@@ -1,0 +1,21 @@
+body {
+    background-image: url("../icons/background.jpeg");
+    background-size: 100%;
+    text-align: center;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    text-align: center;
+}
+
+#submit-btn{
+    width: 90%;
+}

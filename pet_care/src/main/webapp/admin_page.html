@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="icon" type="image/png" href="icons/bone.png">
+    <link rel="stylesheet" href="styles/admin_page.css">
+</head>
+
+<body>
+
+    <table id="user-table">
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Options</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+
+        </tr>
+        </tbody>
+    </table>
+
+    <p id="no-users-p">No Users</p>
+
+    <button id="change-table-btn">Show Pet Keepers</button>
+
+    <section id="user-info">
+        <fieldset>
+            <div id="owner-info">
+                <p>
+                    <span>Username:
+                        <span id="username-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>First Name:
+                        <span id="first-name-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Last Name:
+                        <span id="last-name-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Birth Date:
+                        <span id="birthdate-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Gender:
+                        <span id="gender-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Country:
+                        <span id="country-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>City:
+                        <span id="city-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Address:
+                        <span id="address-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Personal Page:
+                        <span id="personal-page-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Job:
+                        <span id="job-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Telephone:
+                        <span id="telephone-span"></span>
+                    </span>
+                </p>
+            </div>
+
+            <div id="keeper-info">
+                <p>
+                    <span>Property:
+                        <span id="property-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Hosting:
+                        <span id="hosting-span"></span>
+                    </span>
+                </p>
+
+
+                <p id="dogprice-p">
+                    <span>Dog Price:
+                        <span id="dogprice-span"></span>
+                    </span>
+                </p>
+
+
+                <p id="catprice-p">
+                    <span>Cat Price:
+                        <span id="catprice-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Description:
+                        <span id="description-span"></span>
+                    </span>
+                </p>
+
+            </div>
+        </fieldset>
+
+
+    </section>
+    <button id="exit-info-btn">Exit</button>
+
+
+<button id="admin-log-out-btn">Log Out</button>
+<button id="change-pass-btn">Change Password</button>
+
+
+<form id="change-pass-form">
+    <!-- password -->
+    <label>*Password:</label>
+    <input type="password" id="password-input" minlength="8" maxlength="15" name="password" placeholder="Type your password"
+           pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]$/g" title="8 to 15 characters, it should contain at least one latin character,
+            a number and a symbol (eg '#', '$', '%', etc.)" onchange="return strength()" required>
+    <input type="button" id="show-hide-pass-btn" value="Show Password"><br>
+
+    <span id="message2"></span>
+    <span id="message3"></span>
+    <span id="message4"></span>
+    <span id="message5"></span><br>
+
+    <!-- confirm password -->
+    <label>*Confirm Password:</label>
+    <input type="password" id="confirm-pass-input" minlength="8" maxlength="15" name="confirm" placeholder="Type your password"
+           pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]$/g" title="8 to 15 characters, it should contain at least one latin character,
+            a number and a symbol (eg '#', '$', '%', etc.)" required>
+    <input type="button" id="show-hide-confirm-pass-btn" value="Show Password"><br><br>
+    <span id="message1"></span><br>
+
+    <button type='button' id="cancel-btn">Cancel</button>
+    <input id="ok-btn" type="submit" value="Ok">
+</form>
+<script src="scripts/admin_page.js"></script>
+</body>
+</html>

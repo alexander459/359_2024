@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="icon" type="image/png" href="icons/bone.png">
+</head>
+<body>
+
+<form id="sign-up-form">
+
+    <div id="user-form-div">
+        <label for="username">Username*</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label id="pass-input-label" for="pass-input">Password* (at least 8 chars)</label><br>
+        <input type="password" id="pass-input" name="password"  pattern=".{5,}" required><br><br>
+
+        <label id="verify-pass-label" for="verify-pass-input">Verify Password*</label><br>
+        <input type="password" id="verify-pass-input" name="verify-password"  pattern=".{5,}" required><br><br>
+
+        <label for="email">Email*</label><br>
+        <input type="email" id="email" name="email_address" required><br><br>
+
+        <label for="phone-number">Phone number</label><br>
+        <input type="text" id="phone-number" name="phone_number"><br><br>
+
+        <label for="address">Home Address:</label><br>
+        <input id="address" name="street_address"><br><br>
+
+        <input type="radio" id="pet-owner-radio" name="user_type" value="PET_OWNER">
+        <label for="pet-owner-radio">Pet Owner</label><br>
+        <input type="radio" id="pet-keeper-radio" name="user_type" value="PET_KEEPER" checked="checked">
+        <label for="pet-keeper-radio">Pet Keeper</label><br><br>
+    </div>
+
+
+    <div id="pet-form-div">
+        <label for="chip-input">Chip SID*</label><br>
+        <input type="text" id="chip-input" name="chip_sid" required><br><br>
+
+        <label for="pet-name-input">Name*</label><br>
+        <input type="text" id="pet-name-input" name="pet_name" required><br><br>
+
+        <label for="pet-birthday">Day of Birth</label><br>
+        <input type="date" id="pet-birthday" name="pet_birthday"><br><br>
+
+        <input type="radio" id="dog-radio" value="DOG" name="pet_type" checked="checked">
+        <label for="dog-radio">Dog</label><br>
+
+        <input type="radio" id="cat-radio" value="CAT" name="pet_type">
+        <label for="cat-radio">Cat</label><br>
+
+        <input type="radio" id="bunny-radio" value="BUNNY" name="pet_type">
+        <label for="bunny-radio">Bunny</label><br>
+
+        <input type="radio" id="fish-radio" value="FISH" name="pet_type">
+        <label for="fish-radio">Fish</label><br>
+
+        <input type="radio" id="other-radio" value="OTHER" name="pet_type">
+        <label for="other-radio">Other</label><br><br>
+    </div>
+
+    <input type="submit" value="Submit">
+</form>
+
+<script src="scripts/signup.js"></script>
+</body>
+</html>

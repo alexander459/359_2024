@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <link rel="icon" type="image/png" href="icons/bone.png">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+
+    <div>
+        <form id="login-form">
+            <div class="uname-container">
+                <label for="username">Username:</label><br>
+                <input name="username" id="username" type="text" required>
+            </div><br>
+            <div class="psw-container">
+                <label for="password">Password:</label>&nbsp;<br>
+                <input name="password" id="password" type="password" required>
+            </div><br>
+            <div>
+            <label for="user">User Type:</label><br>
+                <select name="user_type" id="user" required>
+                    <option value="" hidden selected></option>
+                    <option value="PET_OWNER"> Pet owner</option>
+                    <option value="PET_KEEPER"> Pet keeper</option>
+                </select>
+            </div><br><br>
+
+            <input id="submit-btn" type="submit" value="Login">
+        </form>
+    </div>
+    <script src="scripts/login.js"></script>
+</body>
+</html>

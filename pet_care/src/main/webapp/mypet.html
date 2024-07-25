@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Pet</title>
+    <link rel="icon" type="image/png" href="icons/bone.png">
+    <link rel="stylesheet" href="styles/mypet.css">
+</head>
+<body>
+
+<form id="pet-registration-form">
+    <fieldset>
+        <h2>Pet Information</h2>
+
+        <label for="pet-id-input">*Chip ID:</label>
+        <input id="pet-id-input" minlength="5" maxlength="10" name="pet_id" placeholder="Type pet's chip id"
+               title="5 to 8 digits" required><br><br>
+
+        <label for="pet-name-input">*Pet Name:</label>
+        <input id="pet-name-input" type="text" name="name" placeholder="Type pet's name" required><br><br>
+
+        <label for="pet-type">*Pet Type:</label>
+        <select name="type" id="pet-type" required>
+            <option value="" hidden selected>Select</option>
+            <option value="DOG"> Dog</option>
+            <option value="CAT"> Cat</option>
+        </select><br><br>
+
+        <label for="pet-breed">*Breed:</label>
+        <select name="breed" id="pet-breed" required>
+            <option value="" hidden selected>Select</option>
+            <option value="AEGEAN"> Aegean</option>
+            <option value="LABRADOR"> Labrador</option>
+            <option value="TURKISH"> Turkish</option>
+        </select><br><br>
+
+        <label for="pet-gender">*Pet Gender:</label>
+        <select name="gender" id="pet-gender" required>
+            <option value="" hidden selected>Select</option>
+            <option value="MALE"> Male</option>
+            <option value="FEMALE"> Female</option>
+        </select><br><br>
+
+        <label for="pet-birthyear">*Pet Birth Year:</label>
+        <input id="pet-birthyear" minlength="4" maxlength="4" type="number" min="2000" max="2060" step="1" name="birthyear" placeholder="Birth year" required><br><br>
+
+        <label for="pet-wight">*Pet Weight:</label>
+        <input id="pet-wight" type="number" min="0" max="50" step="0.1" name="weight" placeholder="Weight" required><br><br>
+
+        <label for="pet-description">Pet Description:</label><br>
+        <textarea id="pet-description" rows="3" cols="30" style="resize: none" name="description"></textarea><br><br>
+
+        <!--
+        <label for="pic-input">Pet Picture:</label>
+        <input id="pic-input" type="file" name="photo">
+        -->
+
+        <input type="submit" value="Register"><br><br>
+    </fieldset>
+</form>
+
+<section id="pet-profile">
+    <fieldset>
+        <h1>My Pet</h1>
+            <div class="image-container">
+                <img id="image" src ="" alt="My Pet">
+            </div>
+            <div id="info">
+                <p>
+                    <span>Pet Name:
+                        <span id="pet-name-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Pet Type:
+                        <span id="pet-type-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Birth Year:
+                        <span id="birth-year-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Gender:
+                        <span id="pet-gender-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Weight:
+                        <span id="pet-weight-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Breed:
+                        <span id="pet-breed-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Chip ID:
+                        <span id="pet-id-span"></span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <span>Description:
+                        <span id="pet-description-span"></span>
+                    </span>
+                </p>
+            </div>
+        <button id="remove-pet-btn">Remove Pet</button>
+    </fieldset>
+</section>
+
+<script src="scripts/mypet.js"></script>
+</body>
+</html>

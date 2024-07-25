@@ -1,0 +1,63 @@
+body {
+    background-image: url("../icons/background.jpeg");
+    background-size: 100%;
+    text-align: center;
+}
+
+fieldset {
+    padding: 2% 20%;
+}
+
+h2{
+    margin-top: 0;
+    color: rgb(80, 29, 38);
+}
+
+#submit {
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    color: rgb(80, 29, 38);
+}
+
+p {
+    font-size: 50px;
+    transform: translateY(200px);
+}
+
+#message1,
+#message2,
+#message3,
+#message4,
+#message5,
+#message6,
+#message7,
+#message8,
+#message9,
+#message10,
+#message11,
+#message12,
+#message13,
+#message14 {
+    font-size: 12px;
+    color: rgb(80, 29, 38);
+}
+
+#myBut,
+#myBut2,
+#open {
+    color: rgb(80, 29, 38);
+}
+
+#submit_result {
+    font-size: 20px;
+    color: rgb(80, 29, 38);
+}
+
+#extra_stud, #extra_libr{
+    display: none;
+}
+
+#Map{
+    transform: translateX(170px);
+}
